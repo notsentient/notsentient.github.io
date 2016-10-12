@@ -4,19 +4,33 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 @import 'https://fonts.googleapis.com/css?family=Vollkorn';
 
+iframe {
+	width: 640px;
+	height: 360px;
+	margin: auto;
+}
 
 .pane {
 	display: flex;
+	padding: 0;
 }
 
 .pane .half {
-	width: 50vw;
+	max-width: 50vw;
 	max-height: 100vh;
+
+}
+
+img .half {
+	min-width: 1000px;
+	min-height: 1000px;
 }
 
 .bingo .text {
-	padding: 0;
-	width: 800px;
+	padding: 50px 50px 50px 50px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .bingo .excerpt {
@@ -28,7 +42,30 @@
 .bingo p {
 	color: #222;
 	font: 400 16px/24px 'gentium book basic';
-	margin: 0;
+	margin: 20px 0 0 0;
+}
+
+.bingo .attrib {
+	color: #c90707;
+	font: 400 12px/18px 'vollkorn';
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 10px;
+    text-align: right;
+}
+
+.bingo h1 {
+	color: #222;
+	margin: 0 0 32px 0;
+	text-align: left;
+	text-transform: uppercase;
+	/*width: 800px;*/
+}
+
+.bingo h2 {
+	margin: 0 0 20px 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .bingo#intro.pane {
@@ -47,26 +84,23 @@
 .bingo#intro h1 {
 	color: #222;
 	font: 800 64px/64px 'open sans';
-	margin: 0 0 32px 0;
 	text-align: center;
-	text-transform: uppercase;
-	width: 800px;
 }
+
 .bingo#intro h1 span {
 	font: 400 60px/60px 'gentium book basic';
 	font-style: italic;
 	text-transform: none;
 }
+
 .bingo#intro h1 span.kern {
 	margin: 0 4px 0 -10px;
 }
+
 .bingo#intro h2 {
 	border-top: 1px solid #222;
 	color: #222;
 	font: 800 20px/20px 'open sans';
-	margin: 0 0 20px 0;
-	text-align: center;
-	text-transform: uppercase;
 }
 .bingo#intro h2 span {
 	background: #ef4723;
@@ -75,69 +109,65 @@
 	top: -10px;
 }
 
+.bingo .image {
+    background-image: url("your/url/here");
+
+}
+
 .bingo#evangelion {
 	background: #010100;
 	padding: 0;
 }
-.bingo#evangelion .text{
-	margin: 50 0 0 50;
-}
+
 .bingo#evangelion p {
-	margin-top: 20px;
 	color: #f7fef7;
 	text-shadow: 0 0 3px #FF0000;
 }
 .bingo#evangelion h1 {
 	color: #f7fef7;
 	font: 800 64px/64px 'open sans';
-	margin: 0 0 32px 0;
-	text-align: center;
-	text-transform: uppercase;
-	width: 800px;
 }
 
 .bingo#evangelion h2 {
 	border-top: 1px solid #f7fef7;
 	color: #f7fef7;
 	font: 800 20px/20px 'open sans';
-	margin: 0 0 20px 0;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 .bingo#the-fall {
 	background: #fbfbfb;
 	padding: 0;
 }
-.bingo#the-fall .text{
-	margin: 50 0 0 50;
-}
+
 .bingo#the-fall p {
-	margin-top: 20px;
 	color: #000;
 }
 .bingo#the-fall h1 {
 	color: #000;
 	font: 800 64px/64px 'lato';
-	margin: 0 0 32px 0;
-	text-align: center;
-	text-transform: uppercase;
-	width: 800px;
 }
 
 .bingo#the-fall h2 {
 	border-top: 1px solid #000;
 	color: #000;
 	font: 800 20px/20px 'lato';
-	margin: 0 0 20px 0;
-	text-align: center;
-	text-transform: uppercase;
 }
 
-.bingo .attrib {
-    color: #c90707;
-    font: 400 12px/18px 'vollkorn';
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-indent: -13px;
+.bingo#peaky-blinders {
+	background: #fbfbfb;
+}
+
+.bingo#peaky-blinders p {
+	color: #000;
+}
+
+.bingo#peaky-blinders h1 {
+	color: #000;
+	font: 800 64px/64px 'lato';
+}
+
+.bingo#peaky-blinders h2 {
+	border-top: 1px solid #000;
+	color: #000;
+	font: 800 20px/20px 'lato';
 }
